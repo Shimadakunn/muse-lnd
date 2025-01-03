@@ -23,6 +23,15 @@ MUSE is a **mobile app** in react native for independent artists to find and pur
 
 https://github.com/user-attachments/assets/596ba87f-8ac0-4d13-b66f-958f6cc50f68
 
+![image](https://github.com/user-attachments/assets/ecc96298-d2f0-4691-ac3c-1d25b37fc145)
+
+![image](https://github.com/user-attachments/assets/69d1bab0-582d-4189-a4da-5ef5f6d705df)
+
+![image](https://github.com/user-attachments/assets/d5182b31-c54c-4ec3-a782-d849a1128981)
+
+![image](https://github.com/user-attachments/assets/54b1c459-0bbd-4551-a2fb-8aa0ef0ea2c5)
+
+![image](https://github.com/user-attachments/assets/7186cbfe-268e-4aa6-b0ab-d74e1e96a70e)
 
 ## Database Schema
 
