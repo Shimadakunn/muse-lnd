@@ -65,3 +65,7 @@ On iOS, lnd runs in the same process as the main app and there are far more rest
 - [ ] Add OnRamp and OffRamp solution
 - [ ] Make the blockchain less visible to the user
 - [ ] Add possibility to filter beats by genre, bpm, key, etc.
+
+## Licence
+
+Ce code appartient entièrement à Leo Combaret et Idir Guettab. Il est interdit de l'utiliser a d'autres fin que pour l'enseignement.
