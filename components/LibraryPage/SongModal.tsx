@@ -6,6 +6,7 @@ import { Image, Text, View } from 'react-native';
 import ActionButton from '~/components/ui/ActionButton';
 import { AlertDialog } from '~/components/ui/AlertDialog';
 import Modal from '~/components/ui/modal';
+import { useLnd } from '~/contexts/ContextLND';
 import { useUser } from '~/contexts/UserContext';
 import { useSongModal } from '~/hooks/useSongModal';
 
@@ -16,6 +17,7 @@ interface ModalProps {
 }
 
 const SongModal = ({ showModal, setShowModal, swipeId }: ModalProps) => {
+  const { tx } = useLnd();
   const { isPurchased, setIsPurchased } = useUser();
   const [isPurchasing, setIsPurchasing] = useState(false);
   const { song, markSwipeAsDeleted, handleMessageAction } = useSongModal({
@@ -28,7 +30,7 @@ const SongModal = ({ showModal, setShowModal, swipeId }: ModalProps) => {
 
   const handlePurchase = async () => {
     setIsPurchasing(true);
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    await tx.sendPayment(song.price, 'bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh');
     setIsPurchased(true);
     await new Promise((resolve) => setTimeout(resolve, 10000));
     setIsPurchasing(false);

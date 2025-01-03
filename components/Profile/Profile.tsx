@@ -7,7 +7,9 @@ import { useNavigation } from 'expo-router';
 import React from 'react';
 import { Image, SafeAreaView, Text, TouchableOpacity, View } from 'react-native';
 
+import { withLnd } from '~/app/withLnd';
 import Header from '~/components/header';
+import { useLnd } from '~/contexts/ContextLND';
 import { useProfile } from '~/hooks/useProfile';
 
 // Define your RootStackParamList
@@ -17,6 +19,7 @@ type RootStackParamList = {
 
 // Page de profil de l'utilisateur
 export default function Profile() {
+  const { user } = useLnd();
   const { handleSignOut, userProfile } = useProfile();
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
@@ -65,9 +68,7 @@ export default function Profile() {
         {/* Bouton pour se déconnecter */}
         <View className="my-4 flex w-full items-center justify-center px-8">
           <Text className="text-gray-300">Wallet Address</Text>
-          <Text className="text-2xl font-bold text-white">
-            bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh
-          </Text>
+          <Text className="text-2xl font-bold text-white">{user.wallet.address}</Text>
         </View>
         <View className="my-4 flex w-full items-center justify-center px-8">
           <TouchableOpacity className="rounded-lg bg-gray-500 p-2" onPress={handleSignOut}>
