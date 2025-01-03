@@ -21,17 +21,21 @@ MUSE is a **mobile app** in react native for independent artists to find and pur
 
 ## Demo
 
-https://github.com/user-attachments/assets/596ba87f-8ac0-4d13-b66f-958f6cc50f68
+<div style="display: flex; flex-direction: row; gap: 20px; justify-content: center; align-items: flex-start;">
+  <video width="400" src="https://github.com/user-attachments/assets/596ba87f-8ac0-4d13-b66f-958f6cc50f68"></video>
 
-![image](https://github.com/user-attachments/assets/ecc96298-d2f0-4691-ac3c-1d25b37fc145)
-
-![image](https://github.com/user-attachments/assets/69d1bab0-582d-4189-a4da-5ef5f6d705df)
-
-![image](https://github.com/user-attachments/assets/d5182b31-c54c-4ec3-a782-d849a1128981)
-
-![image](https://github.com/user-attachments/assets/54b1c459-0bbd-4551-a2fb-8aa0ef0ea2c5)
-
-![image](https://github.com/user-attachments/assets/7186cbfe-268e-4aa6-b0ab-d74e1e96a70e)
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+    <div style="display: flex; flex-direction: row; gap: 10px;">
+      <img src="https://github.com/user-attachments/assets/ecc96298-d2f0-4691-ac3c-1d25b37fc145" width="200" />
+      <img src="https://github.com/user-attachments/assets/69d1bab0-582d-4189-a4da-5ef5f6d705df" width="200" />
+      <img src="https://github.com/user-attachments/assets/d5182b31-c54c-4ec3-a782-d849a1128981" width="200" />
+    </div>
+    <div style="display: flex; flex-direction: row; gap: 10px;">
+      <img src="https://github.com/user-attachments/assets/54b1c459-0bbd-4551-a2fb-8aa0ef0ea2c5" width="200" />
+      <img src="https://github.com/user-attachments/assets/7186cbfe-268e-4aa6-b0ab-d74e1e96a70e" width="200" />
+    </div>
+  </div>
+</div>
 
 ## Database Schema
 
