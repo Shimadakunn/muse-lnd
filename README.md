@@ -43,14 +43,6 @@ MUSE is a **mobile app** in react native for independent artists to find and pur
 
 ## About tech choices
 
-### Database
-
-We are using **firebase** for the database because it is easy to use and it is a reliable database.
-
-### UI/app
-
-The UI/app is built using react-native, which gives us the performance of a native app on both iOS and Android with development convenience of Javascript.
-
 ### Payment
 
 We thought that **lightning network** would be the best way to handle the payment because it is fast and cheap.
@@ -71,6 +63,14 @@ glue here is the native code (Java on Android and objC on iOS) that allows react
 On Android, the lnd daemon is isolated in it's own process, so it's easier to manage and when it hangs or shutdowns, the whole process is removed, keeping the app's own process "clean" and makes it more difficult for native code to crash the app.
 
 On iOS, lnd runs in the same process as the main app and there are far more restrictions on memory/cpu/processes, so when the wallet is closed, the user can't reopen another wallet without quitting the app.
+
+### Database
+
+We are using **firebase** for the database because it is easy to use and it is a reliable database.
+
+### UI/app
+
+The UI/app is built using react-native, which gives us the performance of a native app on both iOS and Android with development convenience of Javascript.
 
 ## TODO
 
